@@ -1,1 +1,115 @@
+# Exercise 1: Sign in to create an agent
+
+
+이 연습에서는 제공된 자격 증명을 사용하여 Microsoft Copilot Studio 저작 환경에 로그인합니다.
+
+## 작업 1: 브라우저 환경 설정
+
+기존 로그인 환경과 충돌하지 않으려면 다음 3가지 옵션 중 하나를 사용하여 랩을 수행할 수 있습니다.
+
+1. 해당 워크숍에 맞는 새 작업 프로필 설정
+
+![image](https://github.com/user-attachments/assets/ed06e451-863a-4376-a87c-4364ba60ea35) 
+전문가 팁: 작업 기록을 유지하면서 작업 환경과 체험 환경 간에 전환하는 가장 좋은 옵션입니다. </br>
+나중에 계정을 계속 사용하려는 경우에 이상적입니다.
+
+2. 또는 게스트로 탐색합니다.
+
+3. 또는 InPrivate 세션을 시작합니다.
+
+   ![image](https://github.com/user-attachments/assets/8db35820-cabb-47f7-927f-3945959a5c07)
+
+ 
+
+ 
+## 작업 2: Copilot Studio에 로그인
+
+1. aka.ms/CopilotStudioStart로 이동합니다.
+
+2. 제공된 사용자 이름을 입력하고 다음을 클릭합니다.
+
+3. 제공된 비밀번호를 입력하고 로그인을 클릭합니다.
+
+4. 메시지가 표시되면 로그인 상태를 유지할지 여부를 선택합니다.
+
+   ![image](https://github.com/user-attachments/assets/a0d0f725-6af2-4db6-9530-43c3a75653b7)
+
+5. Microsoft Copilot Studio에 처음 액세스하면 국가/지역을 선택하라는 메시지가 표시됩니다. 값을 선택하거나 기본 옵션을 그대로 두고 시작을 클릭할 수 있습니다.
+
+
+## 작업 3: 에이전트 만들기
+
+1. Microsoft Copilot Studio 홈페이지에서 에이전트를 설명하여 만듭니다.
+
+    ```
+   I want to build an agent for my customer support. 
+   It is an assistant for Contoso customers, helping to answer common questions and help with common tasks,
+   like checking an order status
+   ```
+    ![image](https://github.com/user-attachments/assets/587163d7-75a6-4855-bdec-a141137f89b4)
+
+
+2. 상담원을 더욱 맞춤화하기 위해 대화형 환경으로 리디렉션됩니다. 설명에 대한 추가 세부 정보를 제공할 수 있으며(거부할 수 있음) 음성 톤도 묻습니다.
+
+   ```
+   Playful tone, joyful, customer focus, but professional
+   ```
+
+3. 귀하의 에이전트 이름을 입력하라는 메시지가 표시됩니다.
+
+   ```
+   Call this agent [insert name]
+   ```
+
+4. 또한 정보를 얻을 수 있는 공개적으로 접근 가능한 웹사이트에 대한 요청도 받게 됩니다.
+
+  ```
+  Information should come from https://learn.microsoft.com/en-us/microsoft-copilot-studio/ 
+  and from https://www.microsoft.com/en-us/microsoft-copilot/
+  ```
+
+5. 채팅 패널에서 웹사이트 활용을 확인하는 것을 잊지 마세요.
+
+   ![image](https://github.com/user-attachments/assets/5ae39873-d304-46ab-a692-3c01aec7f091)
+
+
+
+6. 또한 상담원이 도와주거나 이야기해서는 안 될 주제나 작업에 대한 질문도 받게 됩니다.
+
+   ```
+   We don't want to discuss other brands like Fabrikam.
+   Never provide product comparisons with competitor technologies.
+   ```
+
+7. 메시지가 표시되면 **I'm done** 이라고 대답할 수 있습니다.
+
+8. 조종사를 만들기 전에 "..." 및 "고급 설정 편집" 메뉴로 이동하여 이름과 성을 추가하여 에이전트 스키마 이름을 업데이트합니다</br>
+   (에이전트 표시 이름과 달리 스키마 이름은 나중에 변경할 수 없는 기술적 속성이며 환경 전체에서 고유해야 함).</br>
+   그리고 나중에 내보내고 솔루션 게시자 접두사에서 상속할 수 있도록 솔루션(예: "Copilot Studio Workshop")에 저장합니다.
+
+
+   ![image](https://github.com/user-attachments/assets/23b0bfa7-bbb1-4330-8861-5732b0da17d2)
+
+   Make sure you pick a unique name for your custom agent by appending your First and Last name to both display name and schema name.
+
+9. 그런 다음 "만들기"를 선택할 수 있습니다.
+
+    ![image](https://github.com/user-attachments/assets/872f5a26-bbe9-43bc-bde2-8f71fcde1b95)
+
+![image](https://github.com/user-attachments/assets/2c3d0c7a-3dbf-4172-a84d-d92ede3144fe)
+
+1. "Skip to configure"를 선택하여 대화형 생성 환경을 피할 수 있습니다.
+2. "설정" 메뉴에서 조종사의 기본 언어를 설정할 수 있습니다. 랩의 경우 영어(en-US)를 유지해야 합니다.
+3. 에이전트를 항상 자체 솔루션 및 게시자의 컨텍스트에서 구성하는 것이 가장 좋습니다. 그러면 에이전트가 원하는 게시자 접두사로 생성되고, 쉽게 내보내어 다른 환경에 배포할 수 있습니다.
+
+
+
+
+
+
+
+
+
+
+
 
